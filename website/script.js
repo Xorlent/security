@@ -9,15 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Tool button click handlers
-    const toolButtons = document.querySelectorAll('.tool-button');
-    toolButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const toolName = this.parentElement.querySelector('h3').textContent;
-            handleToolClick(toolName);
-        });
-    });
-
     // API Key Button
     document.getElementById('apiKeyBtn').addEventListener('click', () => {
         const modal = createModal('Get API Key', `
